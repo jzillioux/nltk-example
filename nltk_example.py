@@ -49,7 +49,7 @@ def main():
         result_pos = tag_pos(result)
         result = stem_words(remove_stopwords(result, stopwords))
 
-        print('Results: {0}'.format(result))
+        print('Stemmed Tokens: {0}'.format(result))
         print('Nouns: {0}'.format([w for w, p in result_pos if p in NOUNS]))
         print('Verbs: {0}'.format([w for w, p in result_pos if p in VERBS]))
 
