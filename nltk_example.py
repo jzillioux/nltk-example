@@ -45,8 +45,9 @@ def main():
         if phrase == 'exit':
             break
 
-        result = stem_words(remove_stopwords(tokenize_phrase(phrase), stopwords))
+        result = tokenize_phrase(phrase)
         result_pos = tag_pos(result)
+        result = stem_words(remove_stopwords(result, stopwords))
 
         print('Results: {0}'.format(result))
         print('Nouns: {0}'.format([w for w, p in result_pos if p in NOUNS]))
