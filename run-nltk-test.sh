@@ -1,5 +1,8 @@
 #!/bin/bash
 
+GOOGLE_APPLICATION_CREDENTIALS="/path/to/googel/credential/file.json"
+export GOOGLE_APPLICATION_CREDENTIALS
+
 create_virtualenv() {
     echo 'Creating virtual environment...'
     virtualenv -q env
