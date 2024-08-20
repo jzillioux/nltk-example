@@ -1,2 +1,2 @@
-nltk==3.4.5
+nltk==3.9
 google-cloud-language==1.2.0
